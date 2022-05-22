@@ -1,0 +1,21 @@
+
+div.btnpos{
+    text-align: center;
+    bottom: 0px;
+    padding: 100px;
+}
+body{
+    padding-left: 10em;
+    padding-right: 10em;
+}
+table {
+    table-layout: fixed;
+  }
+div{
+    padding:5px;
+}
+div.link{
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
