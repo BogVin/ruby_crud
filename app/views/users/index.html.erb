@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Data to perform CRUD operations</h1>
+
+<div id="users">
+  <% @users.each do |user| %>
+    <%= render user %>
+    <p>
+      <%= button_to "Show this user", user, :method => "get" %>
+    </p>
+    <p>
+    <%= button_to "Edit this user", edit_user_path(user), :method => "get" %>
+  </p>
+    <p>
+      <%= button_to "Delate this user", user, method: :delete %>
+    </p>
+  <% end %>
+</div>
+
+<%= button_to "New user", new_user_path, :method => "get" %>
+<%= button_to "Back", root_path, :method => "get" %>
+
+<a href="https://codewithbish.com/"> codewithbish.com</a>
